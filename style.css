@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "poppins";
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.circle {
+  display: inline-block;
+  position: absolute;
+  height: 90%;
+  width: 50%;
+  background-color: #017143;
+  bottom: 0;
+  right: 0;
+  clip-path: circle(72.4% at 100% 83%);
+  z-index: -1;
+}
+
+/* ------ HEADER ------ */ 
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 10rem;
+  align-items: center;
+  height: 14.5rem;
+  position: relative;
+}
+
+header figure img {
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  gap: 4rem;
+}
+
+ul li {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+header .hamb {
+  display: none;
+}
+
+header figure.active {
+  position: relative;
+  z-index: 2;
+}
+
+header ul.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: calc(100vh + 2rem);
+  gap: 2rem;
+  top: 2rem;
+  background-color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+/* ------ MAIN ------ */ 
+
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 0px 1rem 0px 10rem;
+  align-items: center;
+  height: calc(100vh - 145px - 175px);
+}
+
+h1 {
+  font-size: 9rem;
+  font-weight: 400;
+  line-height: 10rem;
+}
+
+span {
+  font-weight: bold;
+  font-size: 9rem;
+  color: rgb(1, 113, 67);
+}
+
+p {
+  font-size: 2rem;
+}
+
+button {
+  background-color: rgb(1, 113, 67);
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+main section:first-child {
+  width: 80rem;
+}
+
+/* ------------- */
+
+main section:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60rem;
+}
+
+main section:nth-child(2) figure:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  filter: invert();
+}
+
+.starbucks {
+  width: 40rem;
+}
+
+main section:nth-child(2) figure:nth-child(2) img {
+  width: 4.1rem;
+  cursor: pointer;
+}
+
+main section:nth-child(2) figure:nth-child(2) img:first-child {
+  width: 2.1rem;
+}
+
+/* ------ FOOTER------ */ 
+
+footer {
+  height: 17.5rem;
+  padding-bottom: 3rem;
+}
+
+footer figure {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+footer figure img {
+  cursor: pointer;
+}
