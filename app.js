@@ -35,11 +35,12 @@ coffeeList.forEach(coffee => {
 let hamb = document.querySelector("#hamb")
 let hambImage = document.getElementById("hamb-image")
 let list = document.getElementById("list")
-
+let body = document.querySelector("body")
 
 hamb.addEventListener("click", () => {
   hamb.classList.toggle("active")
   list.classList.toggle("active")
+  body.classList.toggle("active")
 
   if (hamb.classList.contains("active")) {
     hambImage.src = "img/x-mark.svg"
